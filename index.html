@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Neo – Marketing. Real Estate. Leaders.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=EB+Garamond:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <nav class="nav" aria-label="Main">
+      <a class="logo" href="#top" aria-label="Neo home">
+        <img src="assets/img/neo-logo.png" alt="Neo" />
+      </a>
+      <button
+        class="burger"
+        aria-label="Menu"
+        aria-expanded="false"
+        aria-controls="menu"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+        >
+          <path d="M3 6h18M3 12h18M3 18h18" />
+        </svg>
+      </button>
+      <ul id="menu">
+        <li><a class="link active" href="#top">Home</a></li>
+        <li><a class="link" href="#about">About</a></li>
+        <li><a class="link" href="#capabilities">Capabilities</a></li>
+        <li><a class="link" href="#products">Products</a></li>
+        <li><a class="link" href="#case-studies">Case Studies</a></li>
+        <li><a class="link" href="#news">News</a></li>
+        <li><a class="link" href="#login">Login</a></li>
+        <li><a class="link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <header class="hero" id="top">
+      <video
+        class="hero__video"
+        id="video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        aria-hidden="true"
+      >
+        <source src="assets/WEB_PACKAGE_720_500kbps.mp4" type="video/mp4" />
+      </video>
+      <div class="video-overlay" aria-hidden="true"></div>
+      <div class="hero__bg video-fallback" aria-hidden="true">
+        <svg
+          viewBox="0 0 1600 800"
+          preserveAspectRatio="xMidYMid slice"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#8d8f90" />
+              <stop offset="1" stop-color="#3b3d3f" />
+            </linearGradient>
+            <linearGradient id="ceil" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#5b5e60" />
+              <stop offset="1" stop-color="#9ea1a3" />
+            </linearGradient>
+            <linearGradient id="unit" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#d4d6d6" />
+              <stop offset="1" stop-color="#6e7072" />
+            </linearGradient>
+            <pattern
+              id="lights"
+              width="130"
+              height="64"
+              patternUnits="userSpaceOnUse"
+            >
+              <polygon
+                points="20,10 80,10 100,34 40,34"
+                fill="#e9eaea"
+                opacity=".85"
+              />
+            </pattern>
+          </defs>
+          <rect width="1600" height="800" fill="#7b7d7f" />
+          <rect width="1600" height="300" fill="url(#ceil)" />
+          <rect width="1600" height="300" fill="url(#lights)" />
+          <rect y="560" width="1600" height="240" fill="url(#floor)" />
+          <!-- row of press units in perspective -->
+          <g>
+            <polygon points="120,560 330,540 330,330 150,350" fill="#585a5c" />
+            <polygon points="330,540 560,515 560,250 350,290" fill="#4a4c4e" />
+            <g fill="url(#unit)">
+              <polygon points="170,520 250,512 250,360 190,372" />
+              <polygon points="260,512 350,502 350,330 280,350" />
+              <polygon points="360,502 460,490 460,290 380,320" />
+              <polygon points="470,490 590,476 590,240 490,280" />
+              <polygon points="600,476 740,460 740,200 610,250" />
+            </g>
+            <polygon
+              points="740,460 1040,430 1040,150 750,190"
+              fill="#3e4042"
+            />
+            <rect x="780" y="215" width="250" height="40" fill="#8a8c8e" />
+            <rect x="900" y="300" width="130" height="160" fill="#2c2e30" />
+          </g>
+          <!-- machine mass on the right + wrapped pallet -->
+          <polygon points="900,120 1600,120 1600,620 900,620" fill="#303234" />
+          <rect x="900" y="150" width="700" height="60" fill="#6a6c6e" />
+          <polygon
+            points="1020,620 1600,560 1600,330 1090,360"
+            fill="#b9bbbc"
+            opacity=".8"
+          />
+          <rect
+            x="0"
+            y="600"
+            width="1600"
+            height="40"
+            fill="#2e3032"
+            opacity=".35"
+          />
+        </svg>
+      </div>
+
+      <div class="hero__copy">
+        <h1>
+          <span>Marketing.</span><span>Real Estate.</span><span>Leaders.</span>
+        </h1>
+        <div class="est">Est. since 1938 <i></i></div>
+      </div>
+      <a class="scroll" href="#about" aria-label="Scroll down"
+        ><b></b><em>▾</em></a
+      >
+    </header>
+
+    <main>
+      <section class="intro" id="about">
+        <div class="intro__grid">
+          <div>
+            <h2>Listing property?<br />We’re into that.</h2>
+            <p>
+              From a family home in the suburbs to a beachfront estate, we make
+              <b>bold</b>, <b>eye-catching</b> property campaigns that help your
+              vendors find the right buyers, while you list more and grow your
+              share of the local market.
+            </p>
+            <a class="btn" href="#products">Explore Range</a>
+          </div>
+          <div
+            class="shelves"
+            role="img"
+            aria-label="Sample brochures and magazines displayed on two shelves"
+          >
+            <div class="shelf">
+              <div class="shelf__books">
+                <div class="cover c1"></div>
+                <div class="cover c2"></div>
+                <div class="cover c3"></div>
+              </div>
+              <div class="slab"></div>
+            </div>
+            <div class="shelf">
+              <div class="shelf__books">
+                <div class="cover c4"></div>
+                <div class="cover c5"></div>
+                <div class="cover c6"></div>
+              </div>
+              <div class="slab"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div
+        class="band"
+        role="img"
+        aria-label="Vintage wooden letterpress type trays"
+      >
+        <div class="band__img" data-parallax></div>
+      </div>
+
+      <section class="control" id="capabilities">
+        <div class="control__wrap">
+          <p class="est2">Est. 1938 <i></i></p>
+          <div class="control__grid">
+            <div>
+              <h2>Control Freaks? Us?</h2>
+              <h3>The label’s been thrown around</h3>
+              <p class="lead">
+                We wear it proudly. Every step of a job, from first idea to
+                final delivery, happens under one roof, so nothing reaches your
+                vendors until we’d put our own name on it. Edit this copy to
+                suit.
+              </p>
+            </div>
+            <figure class="quote">
+              <p>
+                “We have used Neo as our supplier for many years. They have
+                always been competitively priced and the quality of what they
+                produce is consistent and of a very high standard.
+              </p>
+              <p>
+                Dean communicates with us regularly and has helped us out by
+                rushing through a last minute order many times. They continually
+                refresh their products to stay current and relevant. Highly
+                recommend Neo.”
+              </p>
+              <figcaption>
+                <cite
+                  >Brett Freeman<br />Director,<br />Noel Jones Ringwood &amp;
+                  Croydon</cite
+                >
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="sample" id="products" aria-label="Sample pack">
+        <div class="scene">
+          <div class="houses" aria-hidden="true">
+            <img class="h-cl1" src="assets/img/clouds.webp" alt="" /><img
+              class="h-cl2"
+              src="assets/img/clouds.webp"
+              alt=""
+            />
+            <img class="h-t1" src="assets/img/trees1.webp" alt="" /><img
+              class="h-t2"
+              src="assets/img/trees2.webp"
+              alt=""
+            />
+            <img class="h-b" src="assets/img/brick.webp" alt="" /><img
+              class="h-w"
+              src="assets/img/white.webp"
+              alt=""
+            />
+          </div>
+          <div class="envelope">
+            <div class="env-back"></div>
+            <div class="pieces">
+              <img
+                class="pc"
+                src="assets/img/edge.jpg"
+                alt=""
+                aria-hidden="true"
+                decoding="async"
+              /><img
+                class="pc"
+                src="assets/img/stripes.jpg"
+                alt=""
+                aria-hidden="true"
+                decoding="async"
+              /><img
+                class="pc"
+                src="assets/img/brief.jpg"
+                alt=""
+                aria-hidden="true"
+                decoding="async"
+              /><img
+                class="pc"
+                src="assets/img/wamberal.jpg"
+                alt=""
+                aria-hidden="true"
+                decoding="async"
+              /><img
+                class="pc"
+                src="assets/img/samuel.jpg"
+                alt=""
+                aria-hidden="true"
+                decoding="async"
+              /><img
+                class="pc"
+                src="assets/img/join.jpg"
+                alt=""
+                aria-hidden="true"
+                decoding="async"
+              /><img
+                class="pc"
+                src="assets/img/hodges.jpg"
+                alt=""
+                aria-hidden="true"
+                decoding="async"
+              /><img
+                class="pc"
+                src="assets/img/jellis.jpg"
+                alt=""
+                aria-hidden="true"
+                decoding="async"
+              /><img
+                class="pc"
+                src="assets/img/tindals.jpg"
+                alt=""
+                aria-hidden="true"
+                decoding="async"
+              /><img
+                class="pc"
+                src="assets/img/bridgewater.jpg"
+                alt=""
+                aria-hidden="true"
+                decoding="async"
+              /><img
+                class="pc"
+                src="assets/img/latitude.jpg"
+                alt=""
+                aria-hidden="true"
+                decoding="async"
+              /><img
+                class="pc"
+                src="assets/img/easter.jpg"
+                alt=""
+                aria-hidden="true"
+                decoding="async"
+              /><img
+                class="pc"
+                src="assets/img/yamba.jpg"
+                alt=""
+                aria-hidden="true"
+                decoding="async"
+              /><img
+                class="pc"
+                src="assets/img/willow.jpg"
+                alt=""
+                aria-hidden="true"
+                decoding="async"
+              />
+            </div>
+            <div class="env-front">
+              <a href="tel:0388092500"
+                >Get your free <em>sample pack</em> today
+                <b>(03) 8809 2500</b></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cases" id="case-studies" aria-label="Case studies">
+        <div class="cases__grid">
+          <a class="case" href="#case-studies"
+            ><div class="case__img th1"></div>
+            <p class="case__meta">01<i></i>Case Study</p>
+            <h3>Lucky Number Eight</h3></a
+          >
+          <a class="case" href="#case-studies"
+            ><div class="case__img th2"></div>
+            <p class="case__meta">02<i></i>Case Study</p>
+            <h3>Elegance on the Golden Mile</h3></a
+          >
+          <a class="case" href="#case-studies"
+            ><div class="case__img th3"></div>
+            <p class="case__meta">03<i></i>Case Study</p>
+            <h3>Luxury Property Showcase</h3></a
+          >
+          <a class="case" href="#case-studies"
+            ><div class="case__img th4"></div>
+            <p class="case__meta">04<i></i>Case Study</p>
+            <h3>Harcourts Rebrand Launch Pack</h3></a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot" id="contact">
+      <div class="foot__dark">
+        <div>
+          <p>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.500a2.5 2.5 0 0 1 0 5z"
+              /></svg
+            ><span>5 Dunlop Rd<br />Mulgrave, VIC 3170</span>
+          </p>
+        </div>
+        <div>
+          <p>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M6.6 10.8a15 15 0 0 0 6.6 6.600l2.200-2.200a1 1 0 0 1 1-.25 11.400 11.400 0 0 0 3.600.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.500a1 1 0 0 1 1 1c0 1.250.2 2.450.57 3.600a1 1 0 0 1-.25 1z"
+              /></svg
+            ><a href="tel:0388092500">03 8809 2500</a>
+          </p>
+          <p>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7L4.500 7v1.500L12 13.500l7.500-5V7z"
+              /></svg
+            ><a href="mailto:customerservice@neo.com.au"
+              >customerservice@neo.com.au</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="foot__talk">
+        <h4>Let’s Talk</h4>
+        <p>Have an idea you would like us to discuss?</p>
+        <a href="mailto:customerservice@neo.com.au"
+          ><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+              d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7L4.500 7v1.500L12 13.500l7.500-5V7z"
+            /></svg
+          >customerservice@neo.com.au</a
+        >
+      </div>
+      <div class="foot__copy">© 2026 Neo</div>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
